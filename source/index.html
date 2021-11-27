@@ -25,50 +25,47 @@
         <span class="visually-hidden">Логотип "Pink".</span>
       </a>
 
-      <nav class="main-nav">
+      <nav class="page-header__main-nav main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Откыть меню</span>
+          <span class="visually-hidden">Откыть меню.</span>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
           </ul>
-        </div>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Приложение "PINK" - взгляните на жизнь иначе</h1>
+      <h1 class="visually-hidden">Приложение "PINK" - взгляните на жизнь иначе.</h1>
       <section class="download">
         <div class="download__wrapper">
           <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-          <img class="download__image" src="img/app-ad.png" alt="Рука, держащая телефон с приложением Pink." width="320" height="286">
           <a class="download__link button" href="#">Скачать приложение</a>
           <ul class="download__list stores-list">
             <li class="stores-list__item">
               <a class="stores-list__link" href="#">
-                <img class="stores-icon" src="img/stores-apple-logo.png" alt="Apple Store" width="57" height="56">
+                <span class="visually-hidden">Apple Store.</span>
               </a>
             </li>
             <li class="stores-list__item">
               <a class="stores-list__link" href="#">
-                <img class="stores-icon" src="img/stores-android-logo.png" alt="Android Store" width="43" height="47">
+                <span class="visually-hidden">Android Store.</span>
               </a>
             </li>
             <li class="stores-list__item">
               <a class="stores-list__link" href="#">
-                <img class="stores-icon" src="img/stores-microsoft-logo.png" alt="Microsoft Store" width="44" height="41">
+                <span class="visually-hidden">Microsoft Store.</span>
               </a>
             </li>
           </ul>
@@ -78,7 +75,9 @@
 
       <section class="qualities">
         <div class="qualities__wrapper">
-          <h2 class="qualities__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+          <h2 class="qualities__title">Что мы предалагаем?</h2>
+          <p class="qualities__main-text">Устали от серости мегаполиса?</p>
+          <p class="qualities__main-text">Нам есть, что вам предложить!</p>
           <ul class="qualities__list">
             <li class="qualities__item">
               <h3 class="qualities__subtitle">Поднимает настроение</h3>
@@ -106,26 +105,30 @@
 
       <section class="reviews">
         <div class="reviews__wrapper slider">
-          <h2 class="visually-hidden">Отзывы</h2>
+          <h2 class="visually-hidden">Отзывы.</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <span class="reviews__author-info">25 лет, водитель трамвая</span>
               <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
             </blockquote>
-            <button class="reviews__prev" type="button"></button>
-            <button class="reviews__next" type="button"></button>
           </div>
+          <button class="reviews__prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв.</span>
+          </button>
+          <button class="reviews__next" type="button">
+            <span class="visually-hidden">Следующий отзыв.</span>
+          </button>
 
           <div class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">
-              <span class="visually-hidden">1</span>
+              <span class="visually-hidden">1.</span>
             </button>
             <button class="slider__toggle" type="button">
-              <span class="visually-hidden">2</span>
+              <span class="visually-hidden">2.</span>
             </button>
             <button class="slider__toggle" type="button">
-              <span class="visually-hidden">3</span>
+              <span class="visually-hidden">3.</span>
             </button>
           </div>
         </div>
@@ -133,7 +136,7 @@
 
       <section class="plans">
         <div class="plans__wrapper slider">
-          <h2 class="visually-hidden">Тарифные планы</h2>
+          <h2 class="visually-hidden">Тарифные планы.</h2>
           <table class="plans-table">
             <tr class="plans-table__row">
               <th class="plans-table__header"></th>
@@ -150,33 +153,33 @@
             </tr>
             <tr class="plans-table__row">
               <td class="plans-table__data">Розовый фильтр</td>
-              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф</span></td>
-              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф</span></td>
-              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф</span></td>
+              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф.</span></td>
+              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф.</span></td>
+              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф.</span></td>
             </tr>
             <tr class="plans-table__row">
               <td class="plans-table__data">Смайлики</td>
-              <td class="plans-table__data plans-table__data--off"><span class="visually-hidden">Опция не включена в тариф</span></td>
-              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф</span></td>
-              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф</span></td>
+              <td class="plans-table__data plans-table__data--off"><span class="visually-hidden">Опция не включена в тариф.</span></td>
+              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф.</span></td>
+              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф.</span></td>
             </tr>
             <tr class="plans-table__row">
               <td class="plans-table__data">Комментарии</td>
-              <td class="plans-table__data plans-table__data--off"><span class="visually-hidden">Опция не включена в тариф</span></td>
-              <td class="plans-table__data plans-table__data--off"><span class="visually-hidden">Опция не включена в тариф</span></td>
-              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф</span></td>
+              <td class="plans-table__data plans-table__data--off"><span class="visually-hidden">Опция не включена в тариф.</span></td>
+              <td class="plans-table__data plans-table__data--off"><span class="visually-hidden">Опция не включена в тариф.</span></td>
+              <td class="plans-table__data plans-table__data--on"><span class="visually-hidden">Опция включена в тариф.</span></td>
             </tr>
           </table>
 
           <div class="plans__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">
-              <span class="visually-hidden">1</span>
+              <span class="visually-hidden">1.</span>
             </button>
             <button class="slider__toggle" type="button">
-              <span class="visually-hidden">2</span>
+              <span class="visually-hidden">2.</span>
             </button>
             <button class="slider__toggle" type="button">
-              <span class="visually-hidden">3</span>
+              <span class="visually-hidden">3.</span>
             </button>
           </div>
         </div>
@@ -186,9 +189,7 @@
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Остались вопросы? Свяжитель с нами!</h2>
           <p class="contacts__text">Звоните:
-            <a class="contacts__phone" href="tel:+78125556666">
-              <span class="contacts__phone-mobile">+7 (812) 555-66-66</span>
-            </a>
+            <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </p>
           <p class="contacts__text">Пишите:
             <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">
@@ -225,36 +226,27 @@
             <span class="visually-hidden">Логотип "Pink".</span>
           </a>
         <section class="page-footer__social social">
-          <h2 class="visually-hidden">Социальные сети</h2>
+          <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="https://twitter.com/htmlacademy_ru">
-                <svg class="social__icon" aria-hidden="true" focusable="false" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.56.17a3.67 3.67 0 0 1 2.11-.03c.69.2 1.3.59 1.72 1.12.72-.2 1.42-.44 2.14-.65-.01.32-.1.63-.26.91a2.2 2.2 0 0 1-.65.73A1.8 1.8 0 0 0 18 1.8c-.1.41-.3.8-.59 1.13-.29.33-.65.6-1.07.77C16.1 9.97 12.97 14.17 5.65 14h-.5C4.7 14 .73 13.56 0 12.23a7.28 7.28 0 0 0 4.98-1.09c-1.03-.29-2.85-.45-3.16-2.74.4.13.81.16 1.22.08C1.76 7.71.34 7.04.42 5c.4.3.9.47 1.42.44C1.1 5.2-.25 2.31.9.83c1.92 1.72 3.96 3.34 7.59 3.5C8.7 2.22 9.69.79 11.56.18Z" fill="#D22856"/>
-                </svg>
-                <span class="visually-hidden">Twitter</span>
+                <span class="visually-hidden">Twitter.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.facebook.com/htmlacademy">
-                <svg class="social__icon" aria-hidden="true" focusable="false" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.5 3.2H9V0H6.02C2.76.17 1.6 2.27 2.08 5.82H0v3.33h2.08V18h3.94V9.15h2.96V5.82H6c-.02-1-.04-2.3.5-2.63Z" fill="#D22856"/>
-                </svg>
-                <span class="visually-hidden">Facebook</span>
+                <span class="visually-hidden">Facebook.</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <svg class="social__icon" aria-hidden="true" focusable="false" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.83 12.8a1.25 1.25 0 0 1-1.28.04 1.1 1.1 0 0 1-.44-.46.97.97 0 0 1-.1-.6V1.22c-.03-.2 0-.41.1-.6C.2.42.35.27.55.16a1.26 1.26 0 0 1 1.28.03l12.4 5.5c1.03.45 1.03 1.17 0 1.62l-12.4 5.5Z" fill="#D22856"/>
-                </svg>
-                <span class="visually-hidden">Youtube</span>
+                <span class="visually-hidden">Youtube.</span>
               </a>
             </li>
           </ul>
         </section>
         <section class="page-footer__copyright copyright">
-          <h2 class="visually-hidden">Партнер</h2>
+          <h2 class="visually-hidden">Партнер.</h2>
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__icon" aria-hidden="true" focusable="false"  width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
