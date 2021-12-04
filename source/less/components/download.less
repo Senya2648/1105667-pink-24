@@ -1,0 +1,37 @@
+.download {
+  background: #1d2631;
+  color: #ffffff;
+  background-image: url("../../img/back-hand-phone.png"), url("../../img/back-city.jpg");
+  background-size: 320px 286px, 320px 462px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 100%, 50% 100%; /*пока условно*/
+}
+
+.download__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 320px;
+}
+
+.download__link {
+  text-decoration: none;
+
+  &:hover {
+    color: @base-color-contrast;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: fade(@base-color-contrast, 30);
+    background-color: #ffffff;
+  }
+}
+
+.download__list {
+  list-style-type: none;
+}
+
+.download__text {
+  font-weight: 300;
+}

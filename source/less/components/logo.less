@@ -1,0 +1,50 @@
+.logo__glasses-sparkle {
+  display: none;
+}
+
+.logo__text-sparkle {
+  display: none;
+}
+
+.logo__glasses-clean {
+  &--header {
+    display: none;
+  }
+
+  &--footer {
+    fill: @base-color-contrast;
+  }
+}
+
+.logo__text-clean {
+  &--header {
+    fill: #ffffff;
+  }
+
+  &--footer {
+    fill: @base-color-dark;
+  }
+}
+
+.logo:hover .logo__text-clean--header {
+  fill: @base-color-contrast;
+}
+
+.logo:active .logo__text-clean--header {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.logo:hover .logo__text-clean--footer {
+  fill: @base-color-contrast;
+}
+
+.logo:active .logo__glasses-clean--footer {
+  opacity: 0.3;
+}
+
+.logo:active .logo__text-clean--footer {
+  fill: @base-color-dark;
+  opacity: 0.3;
+}
+

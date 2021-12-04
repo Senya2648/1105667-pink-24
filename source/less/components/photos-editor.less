@@ -1,0 +1,31 @@
+.photos-editor__button {
+  background: none;
+}
+
+.photos-editor__button--submit {
+  color: @base-color-contrast;
+
+  &:hover {
+    color: #ffffff;
+    background: @base-color-contrast;
+  }
+
+  &:active {
+    color: fade(#ffffff, 30);
+  }
+}
+
+.photos-editor__button--reset {
+  color: @base-color-dark;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #ffffff;
+    opacity: 0.3;
+    background: @base-color-dark;
+  }
+}
