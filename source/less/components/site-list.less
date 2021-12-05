@@ -1,0 +1,27 @@
+.site-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  background: @base-color-dark;
+}
+
+.site-list__link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    color: @base-color-contrast;
+  }
+
+  &:active {
+    color: @base-color-contrast;
+    opacity: 0.3;
+  }
+}
