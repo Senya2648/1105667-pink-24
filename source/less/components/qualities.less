@@ -1,20 +1,41 @@
 .qualities {
-  background-image: url("../../img/back-iphone-smiley.png"), url("../../img/back-grey-big.png");
+  background-image: url("../img/back-iphone-smiley.png"), url("../img/back-grey-big.png");
   background-repeat: no-repeat, no-repeat;
   background-size: 157px 320px, 1172px 828px;
   background-position: 50% 100px, 50% 40px; /*пока условно, просто посмтреть.*/
+  padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
 }
 
 .qualities__main-text {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+  text-align: center;
 }
 
 .qualities__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 .qualities__subtitle {

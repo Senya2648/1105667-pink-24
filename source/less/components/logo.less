@@ -1,49 +1,111 @@
 .logo__glasses-sparkle {
   display: none;
+
+  &--header {
+    @media (min-width: @desktop-width) {
+      display: block;
+      fill: #ffffff;
+      margin-right: 12px;
+    }
+  }
+
+  &--footer {
+    @media (min-width: @desktop-width) {
+      display: block;
+      fill: @base-color-contrast;
+      margin-right: 12px;
+    }
+  }
 }
 
 .logo__text-sparkle {
   display: none;
+
+  &--header {
+    @media (min-width: @desktop-width) {
+      display: block;
+      fill: #ffffff;
+    }
+  }
+
+  &--footer {
+    @media (min-width: @desktop-width) {
+      display: block;
+      fill: @base-color-dark;
+    }
+  }
 }
 
 .logo__glasses-clean {
   &--header {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      fill: #ffffff;
+      margin-right: 12px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   &--footer {
     fill: @base-color-contrast;
+    margin-right: 12px;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }
 
 .logo__text-clean {
   &--header {
     fill: #ffffff;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   &--footer {
     fill: @base-color-dark;
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 }
 
-.logo:hover .logo__text-clean--header {
+.logo:hover .logo__glasses-clean--header,
+.logo:hover .logo__glasses-sparkle--header,
+.logo:hover .logo__text-clean--header,
+.logo:hover .logo__text-sparkle--header {
   fill: @base-color-contrast;
 }
 
-.logo:active .logo__text-clean--header {
+.logo:active .logo__glasses-clean--header,
+.logo:active .logo__glasses-sparkle--header,
+.logo:active .logo__text-clean--header,
+.logo:active .logo__text-sparkle--header {
   fill: #ffffff;
   opacity: 0.3;
 }
 
-.logo:hover .logo__text-clean--footer {
+.logo:hover .logo__text-clean--footer,
+.logo:hover .logo__text-sparkle--footer {
   fill: @base-color-contrast;
 }
 
-.logo:active .logo__glasses-clean--footer {
+.logo:active .logo__glasses-clean--footer,
+.logo:active .logo__glasses-sparkle--footer {
   opacity: 0.3;
 }
 
-.logo:active .logo__text-clean--footer {
+.logo:active .logo__text-clean--footer,
+.logo:active .logo__text-sparkle--footer {
   fill: @base-color-dark;
   opacity: 0.3;
 }

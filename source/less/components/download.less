@@ -1,10 +1,25 @@
 .download {
-  background: #1d2631;
+  background-color: #1d2631;
   color: #ffffff;
-  background-image: url("../../img/back-hand-phone.png"), url("../../img/back-city.jpg");
+  background-image: url("../img/back-hand-phone.png"), url("../img/back-city.jpg");
   background-size: 320px 286px, 320px 462px;
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 100%, 50% 100%; /*пока условно*/
+  padding: 0 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
+}
+
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 
 .download__title {
@@ -12,6 +27,17 @@
   font-size: 24px;
   line-height: 29px;
   padding-bottom: 320px;
+  margin: 0;
+  text-align: center;
+  margin-top: 95px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 212px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 224px;
+  }
 }
 
 .download__link {
@@ -34,4 +60,5 @@
 
 .download__text {
   font-weight: 300;
+  text-align: center;
 }

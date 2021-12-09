@@ -1,10 +1,14 @@
+.plans-table {
+  margin: 0 auto;
+}
+
 .plans-table__header {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   color: #ffffff;
-  background: @base-color-dark;
+  background-color: @base-color-dark;
 }
 
 .plans-table__price {
@@ -25,4 +29,23 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: @base-color-contrast;
+}
+
+.plans-table__header:nth-child(1),
+.plans-table__header:nth-child(2),
+.plans-table__header:nth-child(4) {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+  }
+}
+
+.plans-table__data:nth-child(2),
+.plans-table__data:nth-child(4) {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: table-cell;
+  }
 }
