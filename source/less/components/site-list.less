@@ -2,10 +2,24 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: none; /*переключение на flex*/
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .site-list__item {
-  background: @base-color-dark;
+  background-color: @base-color-dark;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    background: none;
+  }
 }
 
 .site-list__link {
@@ -15,6 +29,14 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  margin: 15.5px 0;
+
+  @media (min-width: @desktop-width) {
+    font-weight: normal;
+    line-height: 18px;
+    text-transform: none;
+  }
 
   &:hover {
     color: @base-color-contrast;

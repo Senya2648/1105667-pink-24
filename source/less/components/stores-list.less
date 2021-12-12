@@ -1,27 +1,37 @@
 .stores-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /*на самом деле нет*/
 }
 
 .stores-list__link {
   text-decoration: none;
   color: #ffffff;
+  display: block;
 }
 
 .stores-list__link--apple-store {
-  background-image: url("../../img/stores-apple-logo.png");
+  background-image: url("../img/stores-apple-logo.png");
   background-repeat: no-repeat;
-  background-size: 47px 56px;
+  background-size: contain;
+  width: 47px;
+  height: 56px;
 }
 
 .stores-list__link--android-store {
-  background-image: url("../../img/stores-android-logo.png");
+  background-image: url("../img/stores-android-logo.png");
   background-repeat: no-repeat;
-  background-size: 43px 47px;
+  background-size: contain;
+  width: 43px;
+  height: 47px;
 }
 
 .stores-list__link--microsoft-store {
-  background-image: url("../../img/stores-microsoft-logo.png");
+  background-image: url("../img/stores-microsoft-logo.png");
   background-repeat: no-repeat;
-  background-size: 44px 41px;
+  background-size: contain;
+  width: 44px;
+  height: 41px;
 }

@@ -1,8 +1,24 @@
 .study {
   display: none;
-  background-image: url("../../img/back-timer.png");
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.study__wrapper {
+  padding-left: 50%;
+  background-image: url("../img/back-timer.png");
   background-repeat: no-repeat;
   background-size: 238px 276px;
+
+  @media (min-width: @desktop-width) {
+    padding-left: 30%;
+  }
 }
 
 .study__title {

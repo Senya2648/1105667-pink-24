@@ -1,9 +1,22 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__text {
   line-height: 18px;
+  margin-right: 15px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 13px;
+  }
 }
 
 .copyright__icon {
   fill: @base-color-contrast;
+  display: block;
+  margin: auto 0;
+
 
   &:hover {
     fill: @base-color-dark;

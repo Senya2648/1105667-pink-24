@@ -1,6 +1,25 @@
 .plans {
-  background-image: url("../../img/back-grey-small.png");
-  background-size: 1214px 506px;
-  background-repeat: no-repeat;
-  background-position: 50% 50px; /*пока условно*/
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.plans__wrapper::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 20px;
+  top: -20px;
+  left: 0;
+  background: linear-gradient(to bottom right, transparent 50%, #f2f2f2 50%);
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+    top: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
+    top: -100px;
+  }
 }
