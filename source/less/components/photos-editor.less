@@ -1,9 +1,69 @@
+.photos-editor {
+  background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    background: none;
+  }
+}
+
+.photos-editor__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.photos-editor__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .photos-editor__button {
   background-color: none;
 }
 
+.photos-editor__range-scale {
+  grid-column: ~"1 / -1";
+
+  @media (max-width: (@tablet-width - 1px)) {
+    grid-row: ~"2 / 3";
+  }
+}
+
+.photos-editor__button-cut,
+.photos-editor__button-fill,
+.photos-editor__button-contrast {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.photos-editor__range-fill,
+.photos-editor__range-contrast {
+  @media (max-width: (@tablet-width - 1px)) {
+    display: none;
+  }
+}
+
+
 .photos-editor__button--submit {
   color: @base-color-contrast;
+  grid-column: ~"1 / -1";
 
   &:hover {
     color: #ffffff;
@@ -13,11 +73,16 @@
   &:active {
     color: fade(#ffffff, 30);
   }
+
+  @media (min-width: @desktop-width) {
+    grid-column: ~"1 / 2";
+  }
 }
 
 .photos-editor__button--reset {
   color: @base-color-dark;
   opacity: 0.1;
+  grid-column: ~"1 / -1";
 
   &:hover {
     opacity: 0.3;
@@ -27,5 +92,9 @@
     color: #ffffff;
     opacity: 0.3;
     background-color: @base-color-dark;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: ~"2 / 3";
   }
 }

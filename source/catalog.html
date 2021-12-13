@@ -8,9 +8,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <div class="container">
-        <div class="page-header__menu">
-          <a class="page-header__logo logo">
+
+          <a class="page-header__logo logo" href="index.html">
             <svg class="logo__glasses-clean logo__glasses-clean--header" aria-hidden="true" focusable="false"  width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z"/>
             </svg>
@@ -48,14 +47,13 @@
               </li>
               </ul>
           </nav>
-        </div>
-      </div>
+
     </header>
 
     <main class="page-main">
       <h1 class="page-main__title page-main__title--inner">Фотографии пользователей</h1>
       <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <section class="photos">
+      <section class="photos container">
         <h2 class="visually-hidden">Фотографии.</h2>
         <div class="photos__single-photo photo-container">
           <a class="photo-container__image-link" target="_blank" href="img/photos-panorama-full.jpg">
@@ -63,13 +61,17 @@
           </a>
           <span class="photo-container__hit">Панорама дня</span>
           <div class="photo-container__description">
-            <span class="photo-container__author-name">Анна</span>
-            <span class="photo-container__post-time">(5 минут назад)</span>
+            <div class="photo-container__post-info">
+              <span class="photo-container__author-name">Анна</span>
+              <span class="photo-container__post-time">(5 минут назад)</span>
+            </div>
             <p class="photo-container__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="photo-container__button button" type="button">
-              <span class="visually-hidden">Отметить как понравившуюся.</span>
-            </button>
-            <span class="photo-container__likes">Нравится: 215</span>
+            <div class="photo-container__likes-info">
+              <button class="photo-container__button button" type="button">
+                <span class="visually-hidden">Отметить как понравившуюся.</span>
+              </button>
+              <span class="photo-container__likes">Нравится: 215</span>
+            </div>
           </div>
         </div>
         <div class="photos__single-photo photo-container">
@@ -77,13 +79,17 @@
             <img class="photo-container__image" src="img/photos-car.jpg" alt="Белая машина" width="280" height="180">
           </a>
           <div class="photo-container__description">
+            <div class="photo-container__post-info">
             <span class="photo-container__author-name">Левон</span>
             <span class="photo-container__post-time">(5 часов назад)</span>
+            </div>
             <p class="photo-container__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="photo-container__likes-info">
             <button class="photo-container__button button" type="button">
               <span class="visually-hidden">Отметить как понравившуюся.</span>
             </button>
             <span class="photo-container__likes">Нравится: 356</span>
+            </div>
           </div>
         </div>
         <div class="photos__single-photo photo-container">
@@ -91,13 +97,17 @@
             <img class="photo-container__image" src="img/photos-drums.jpg" alt="Барабанная установка" width="280" height="180">
           </a>
           <div class="photo-container__description">
-            <span class="photo-container__author-name">Антон</span>
-            <span class="photo-container__post-time">(12 часов назад)</span>
+            <div class="photo-container__post-info">
+              <span class="photo-container__author-name">Антон</span>
+              <span class="photo-container__post-time">(12 часов назад)</span>
+            </div>
             <p class="photo-container__text">Соседи будут рады!</p>
-            <button class="photo-container__button button" type="button">
-              <span class="visually-hidden">Отметить как понравившуюся.</span>
-            </button>
-            <span class="photo-container__likes">Нравится: 666</span>
+            <div class="photo-container__likes-info">
+              <button class="photo-container__button button" type="button">
+                <span class="visually-hidden">Отметить как понравившуюся.</span>
+              </button>
+              <span class="photo-container__likes">Нравится: 666</span>
+            </div>
           </div>
         </div>
         <div class="photos__single-photo photo-container">
@@ -105,13 +115,17 @@
             <img class="photo-container__image" src="img/photos-roof.jpg" alt="Стеклянная крыша" width="280" height="180">
           </a>
           <div class="photo-container__description">
-            <span class="photo-container__author-name">Борис</span>
-            <span class="photo-container__post-time">(20 часов назад)</span>
+            <div class="photo-container__post-info">
+              <span class="photo-container__author-name">Борис</span>
+              <span class="photo-container__post-time">(20 часов назад)</span>
+            </div>
             <p class="photo-container__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="photo-container__button button" type="button">
-              <span class="visually-hidden">Отметить как понравившуюся.</span>
-            </button>
-            <span class="photo-container__likes">Нравится: 215</span>
+            <div class="photo-container__likes-info">
+              <button class="photo-container__button button" type="button">
+                <span class="visually-hidden">Отметить как понравившуюся.</span>
+              </button>
+              <span class="photo-container__likes">Нравится: 215</span>
+            </div>
           </div>
         </div>
         <div class="photos__single-photo photo-container">
@@ -119,13 +133,17 @@
             <img class="photo-container__image" src="img/photos-kuban.jpg" alt="Кубанская бахча" width="280" height="180">
           </a>
           <div class="photo-container__description">
-            <span class="photo-container__author-name">Сергей</span>
-            <span class="photo-container__post-time">(25 часов назад)</span>
+            <div class="photo-container__post-info">
+              <span class="photo-container__author-name">Сергей</span>
+              <span class="photo-container__post-time">(25 часов назад)</span>
+            </div>
             <p class="photo-container__text">Самая кубанская в мире!</p>
-            <button class="photo-container__button button" type="button">
-              <span class="visually-hidden">Отметить как понравившуюся.</span>
-            </button>
-            <span class="photo-container__likes">Нравится: 4</span>
+            <div class="photo-container__likes-info">
+              <button class="photo-container__button button" type="button">
+                <span class="visually-hidden">Отметить как понравившуюся.</span>
+              </button>
+              <span class="photo-container__likes">Нравится: 4</span>
+            </div>
           </div>
         </div>
         <div class="photos__single-photo photo-container">
@@ -133,13 +151,17 @@
             <img class="photo-container__image" src="img/photos-legs.jpg" alt="Ноги свешиваются со скалы на фоне гор" width="280" height="180">
           </a>
           <div class="photo-container__description">
-            <span class="photo-container__author-name">Максим</span>
-            <span class="photo-container__post-time">(40 часов назад)</span>
+            <div class="photo-container__post-info">
+              <span class="photo-container__author-name">Максим</span>
+              <span class="photo-container__post-time">(40 часов назад)</span>
+            </div>
             <p class="photo-container__text">Где снег-то?</p>
-            <button class="photo-container__button button" type="button">
-              <span class="visually-hidden">Отметить как понравившуюся.</span>
-            </button>
-            <span class="photo-container__likes">Нравится: 150</span>
+            <div class="photo-container__likes-info">
+              <button class="photo-container__button button" type="button">
+                <span class="visually-hidden">Отметить как понравившуюся.</span>
+              </button>
+              <span class="photo-container__likes">Нравится: 150</span>
+            </div>
           </div>
         </div>
         <div class="photos__single-photo photo-container">
@@ -147,64 +169,57 @@
             <img class="photo-container__image" src="img/photos-plain.jpg" alt="Крыло самолета на фоне неба" width="280" height="180">
           </a>
           <div class="photo-container__description">
-            <span class="photo-container__author-name">Надежда</span>
-            <span class="photo-container__post-time">(45 часов назад)</span>
+            <div class="photo-container__post-info">
+              <span class="photo-container__author-name">Надежда</span>
+              <span class="photo-container__post-time">(45 часов назад)</span>
+            </div>
             <p class="photo-container__text">Всем GM и взаимные лайки!</p>
+            <div class="photo-container__likes-info">
             <button class="photo-container__button button" type="button">
               <span class="visually-hidden">Отметить как понравившуюся.</span>
             </button>
             <span class="photo-container__likes">Нравится: 2560</span>
+            </div>
           </div>
         </div>
         <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
+
       <section class="photos-editor">
-        <h2 class="visually-hidden">Редактор изображения.</h2>
-        <img class="photos-editor__image" src="img/photos-winter.jpg" alt="Заснеженная дорога в лесу" width="280" height="374">
+        <div class="photos-editor__wrapper container">
+          <h2 class="visually-hidden">Редактор изображения.</h2>
+          <img class="photos-editor__image" src="img/photos-winter.jpg" alt="Заснеженная дорога в лесу" width="280" height="374">
 
-        <button class="photos-editor__button" type="button">
-          <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
-          </svg>
-          <span class="visually-hidden">Обрезать фотографию.</span>
-        </button>
+          <form  class="photos-editor__form" action="https://echo.htmlacademy.ru/" method="post">
+          <button class="photos-editor__button photos-editor__button-cut" type="button">
+            <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
+            </svg>
+            <span class="visually-hidden">Обрезать фотографию.</span>
+          </button>
 
-        <div class="photos-editor__range-scale">
-          <div class="photos-editor__range-bar range-bar">
-            <button class="range-bar__toggle" type="button">
-              <span class="visually-hidden">Изменить значение.</span>
-            </button>
-          </div>
+          <input class="photos-editor__range-scale photos-editor__range-cut" type="range" id="cut" name="cut" min="0" max="10">
+
+          <button class="photos-editor__button photos-editor__button-fill" type="button">
+            <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
+            <span class="visually-hidden">Заливка фотографии.</span>
+          </button>
+
+          <input class="photos-editor__range-scale photos-editor__range-fill" type="range" id="fill" name="fill" min="0" max="10">
+
+
+          <button class="photos-editor__button photos-editor__button-contrast" type="button">
+            <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g></svg>
+            <span class="visually-hidden">Изменить контраст фотографии.</span>
+          </button>
+
+          <input class="photos-editor__range-scale photos-editor__range-contrast" type="range" id="contrast" name="contrast" min="0" max="10">
+
+          <button class="photos-editor__button photos-editor__button--submit button" type="submit">Запостить</button>
+          <button class="photos-editor__button button photos-editor__button--reset" type="reset">Отмена</button>
+
+          </form>
         </div>
-
-        <button class="photos-editor__button" type="button">
-          <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
-          <span class="visually-hidden">Заливка фотографии.</span>
-        </button>
-
-        <div class="photos-editor__range-scale">
-          <div class="photos-editor__range-bar range-bar">
-            <button class="range-bar__toggle" type="button">
-              <span class="visually-hidden">Изменить значение.</span>
-            </button>
-          </div>
-        </div>
-
-        <button class="photos-editor__button" type="button">
-          <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g></svg>
-          <span class="visually-hidden">Изменить контраст фотографии.</span>
-        </button>
-
-        <div class="photos-editor__range-scale">
-          <div class="photos-editor__range-bar range-bar">
-            <button class="range-bar__toggle" type="button">
-              <span class="visually-hidden">Изменить значение.</span>
-            </button>
-          </div>
-        </div>
-
-        <button class="photos-editor__button photos-editor__button--submit button" type="submit">Запостить</button>
-        <button class="photos-editor__button button photos-editor__button--reset" type="reset">Отмена</button>
 
 
       </section>
@@ -213,8 +228,8 @@
 
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-          <a class="page-footer__logo logo">
+      <div class="page-footer__wrapper container">
+          <a class="page-footer__logo logo" href="index.html">
             <svg class="logo__glasses-clean logo__glasses-clean--footer" aria-hidden="true" focusable="false"  width="59" height="40" viewBox="0 0 59 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="m53.9 6.59 5.03 21.14a1.42 1.42 0 0 1-.75 1.72c-.2.09-.43.13-.65.11h-4.01a11.63 11.63 0 0 1-11.49 10.32c-5.92 0-10.8-4.5-11.49-10.32h-1.96A11.75 11.75 0 0 1 16.97 40c-6 0-10.94-4.57-11.61-10.47H1.45A1.36 1.36 0 0 1 .3 29a1.42 1.42 0 0 1-.24-1.27L5.1 6.6C5.46 4.26 7.64 0 13.5 0c.38 0 .76.16 1.03.44a1.5 1.5 0 0 1 0 2.1c-.27.27-.65.43-1.03.43-4.71 0-5.44 3.7-5.5 4.1L3.34 26.6h2.03a11.75 11.75 0 0 1 11.6-10.3c5.94 0 10.84 4.48 11.6 10.3h1.99a11.63 11.63 0 0 1 11.47-10.19c5.89 0 10.75 4.46 11.48 10.23v-.06h2.14L51 7.08c-.07-.41-.77-4.1-5.5-4.1-.39 0-.76-.17-1.03-.44a1.5 1.5 0 0 1 0-2.1c.27-.28.64-.44 1.03-.44 5.85 0 8.03 4.26 8.38 6.59ZM25.66 29.56a9.12 9.12 0 0 0-.02-2.97 8.85 8.85 0 0 0-8.68-7.38 8.85 8.85 0 0 0-8.82 8.94 8.85 8.85 0 0 0 8.81 8.94c4.4 0 8.04-3.26 8.71-7.53Zm24.94 0a8.75 8.75 0 0 0-8.58-10.23 8.75 8.75 0 0 0-8.58 10.23 8.73 8.73 0 0 0 8.58 7.4c4.33 0 7.91-3.2 8.58-7.4Z"/>
             </svg>

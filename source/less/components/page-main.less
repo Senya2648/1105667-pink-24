@@ -6,6 +6,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+  text-align: center;
 
   &--inner {
     color: #ffffff;
@@ -13,6 +14,7 @@
     background-size: 320px 462px;
     background-repeat: no-repeat;
     background-color: #1d2631;
+    background-position: 50%;
     padding-top: 36px;
     padding-bottom: 84px;
   }
@@ -20,4 +22,33 @@
 
 .page-main__text {
   line-height: 30px;
+  text-align: center;
+  grid-column: ~"1 / -1";
+}
+
+.page-main__text--short {
+  @media (min-width: @tablet-width) {
+    grid-column: ~"2 / 3";
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-main__text--short::first-letter {
+  color: @base-color-contrast;
+}
+
+.page-main__text--full {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    grid-column: ~"2 / 3";
+  }
+}
+
+.page-main__text--full::first-letter {
+  color: @base-color-contrast;
 }
