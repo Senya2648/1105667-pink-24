@@ -11,13 +11,17 @@
 }
 
 .study__wrapper {
-  padding-left: 50%;
+  padding-top: 102px;
+  padding-left: 330px;
+  padding-bottom: 120px;
   background-image: url("../img/back-timer.png");
   background-repeat: no-repeat;
   background-size: 238px 276px;
+  background-position: left center;
 
   @media (min-width: @desktop-width) {
-    padding-left: 30%;
+    padding-left: 500px;
+    background-position: 130px center;
   }
 }
 
@@ -26,9 +30,25 @@
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.study__text {
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .study__link {
   text-decoration-line: underline;
   color: @base-color-contrast;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
