@@ -1,23 +1,90 @@
 .page-main {
   flex-grow: 1;
+  margin-top: -66px;
+  // margin-top: -257px; /*при открытом меню*/
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+    // margin-top: -301px; /*при открытом меню*/
+  }
 }
 
 .page-main__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
+  text-align: center;
 
   &--inner {
     color: #ffffff;
     background-image: url("../img/back-city.jpg");
-    background-size: 320px 462px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #1d2631;
-    padding-top: 36px;
+    background-position: 50%;
+    padding-top: 102px;
     padding-bottom: 84px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    margin-bottom: 54px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 50px;
+      line-height: 68px;
+      padding-top: 191px;
+      padding-bottom: 143px;
+      margin-bottom: 100px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-top: 184px;
+      padding-bottom: 104px;
+      padding-left: 130px;
+      padding-right: 130px;
+    }
   }
 }
 
 .page-main__text {
   line-height: 30px;
+  text-align: center;
+  grid-column: ~"1 / -1";
+  margin-bottom: 60px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 97px;
+  }
+}
+
+.page-main__text--short {
+  @media (min-width: @tablet-width) {
+    grid-column: ~"2 / 3";
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-main__text--short::first-letter {
+  color: @base-color-contrast;
+}
+
+.page-main__text--full {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    grid-column: ~"2 / 3";
+  }
+}
+
+.page-main__text--full::first-letter {
+  color: @base-color-contrast;
 }

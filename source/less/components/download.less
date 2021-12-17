@@ -1,18 +1,41 @@
 .download {
   background-color: #1d2631;
   color: #ffffff;
-  background-image: url("../img/back-hand-phone.png"), url("../img/back-city.jpg");
-  background-size: 320px 286px, 320px 462px;
-  background-repeat: no-repeat, no-repeat;
-  background-position: 50% 100%, 50% 100%; /*пока условно*/
+  background-image: url("../img/back-city.jpg");
+  background-size: auto 462px;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @media (min-width: @tablet-width) {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .download__wrapper {
   display: flex;
   flex-direction: column;
+  background-image: url("../img/back-hand-phone.png");
+  background-size: auto 286px;
+  background-repeat: no-repeat;
+  background-position: 0 176px;
+  padding-top: 95px;
+  padding-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    width: 300px;
+    padding-top: 212px;
+    padding-bottom: 119px;
+    padding-right: 340px;
+    background-size: auto 545px;
+    background-position: 170px 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 224px;
+    padding-bottom: 130px;
+    padding-right: 770px;
+    background-size: auto 645px;
+    background-position: 510px 100%;
   }
 }
 
@@ -20,22 +43,30 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
-  padding-bottom: 320px;
   margin: 0;
+  margin-bottom: 342px;
   text-align: center;
-  margin-top: 95px;
+
 
   @media (min-width: @tablet-width) {
-    margin-top: 212px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 39px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 224px;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 51px;
   }
 }
 
 .download__link {
   text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+  padding: 17px;
+  margin-bottom: 32px;
 
   &:hover {
     color: @base-color-contrast;
@@ -46,10 +77,29 @@
     color: fade(@base-color-contrast, 30);
     background-color: #ffffff;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .download__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 31px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .download__text {
