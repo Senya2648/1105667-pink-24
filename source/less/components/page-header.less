@@ -1,6 +1,5 @@
 .page-header {
   background-color: rgba(0, 0, 0, 0.3);
-  // background-color: @base-color-dark; /*при открытом меню*/
   display: flex;
   flex-direction: column;
   position: relative;
@@ -9,6 +8,12 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.page-header--dark {
+  @media (max-width: (@desktop-width - 1px)) {
+    background-color: @base-color-dark;
   }
 }
 
@@ -45,6 +50,16 @@
 }
 
 .page-header__main-nav {
+  @media (max-width: (@desktop-width - 1px)) {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 110px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     align-items: center;
@@ -64,6 +79,23 @@
   opacity: 0.3;
 }
 
-.page-header__toggle-icon-close {
+.page-header__toggle-icon--closed {
   display: none;
+}
+
+.page-header--nojs {
+  @media (max-width: (@desktop-width - 1px)) {
+    background-color: @base-color-dark;
+  }
+}
+
+.page-header--nojs .page-header__toggle {
+  display: none;
+}
+
+.page-header--nojs .page-header__main-nav {
+  @media (max-width: (@desktop-width - 1px)) {
+    display: block;
+    position: static;
+  }
 }

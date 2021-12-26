@@ -1,0 +1,37 @@
+.slider__toggle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 5px 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider__toggle::before {
+  content: " ";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: @base-color-dark;
+  opacity: 0.3;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__toggle--current::before {
+  content: " ";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 3px solid @base-color-dark;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
