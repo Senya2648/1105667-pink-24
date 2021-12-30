@@ -92,20 +92,19 @@ if (navMain.classList.contains('main-nav--closed')) {
 
 
       <article class="photo-hit">
-        <h2 class="visually-hidden">Панорама дня.</h2>
+        <h2 class="photo-hit__title">Панорама дня</h2>
         <div class="photo-hit__container">
           <a class="photo-hit__image-link" target="_blank" href="img/photos-panorama-full.jpg">
             <img class="photo-hit__image" src="img/photos-panorama.jpg" alt="Подвесной мост" width="320" height="137">
           </a>
           <div class="photo-hit__description">
-            <span class="photo-hit__hit">Панорама дня</span>
             <div class="photo-hit__post-info">
               <span class="photo-hit__author-name">Анна</span>
               <span class="photo-hit__post-time">(5 минут назад)</span>
             </div>
             <p class="photo-hit__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="photo-hit__likes-info">
-              <button class="photo-hit__button button" type="button">
+              <button class="photo-hit__button" type="button">
                 <span class="visually-hidden">Отметить как понравившуюся.</span>
               </button>
               <span class="photo-hit__likes">Нравится: 215</span>
@@ -130,7 +129,7 @@ if (navMain.classList.contains('main-nav--closed')) {
             </div>
             <p class="photo-container__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photo-container__likes-info">
-            <button class="photo-container__button button" type="button">
+            <button class="photo-container__button" type="button">
               <span class="visually-hidden">Отметить как понравившуюся.</span>
             </button>
             <span class="photo-container__likes">Нравится: 356</span>
@@ -148,7 +147,7 @@ if (navMain.classList.contains('main-nav--closed')) {
             </div>
             <p class="photo-container__text">Соседи будут рады!</p>
             <div class="photo-container__likes-info">
-              <button class="photo-container__button button" type="button">
+              <button class="photo-container__button" type="button">
                 <span class="visually-hidden">Отметить как понравившуюся.</span>
               </button>
               <span class="photo-container__likes">Нравится: 666</span>
@@ -166,7 +165,7 @@ if (navMain.classList.contains('main-nav--closed')) {
             </div>
             <p class="photo-container__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photo-container__likes-info">
-              <button class="photo-container__button button" type="button">
+              <button class="photo-container__button" type="button">
                 <span class="visually-hidden">Отметить как понравившуюся.</span>
               </button>
               <span class="photo-container__likes">Нравится: 215</span>
@@ -184,7 +183,7 @@ if (navMain.classList.contains('main-nav--closed')) {
             </div>
             <p class="photo-container__text">Самая кубанская в мире!</p>
             <div class="photo-container__likes-info">
-              <button class="photo-container__button button" type="button">
+              <button class="photo-container__button" type="button">
                 <span class="visually-hidden">Отметить как понравившуюся.</span>
               </button>
               <span class="photo-container__likes">Нравится: 4</span>
@@ -202,7 +201,7 @@ if (navMain.classList.contains('main-nav--closed')) {
             </div>
             <p class="photo-container__text">Где снег-то?</p>
             <div class="photo-container__likes-info">
-              <button class="photo-container__button button" type="button">
+              <button class="photo-container__button" type="button">
                 <span class="visually-hidden">Отметить как понравившуюся.</span>
               </button>
               <span class="photo-container__likes">Нравится: 150</span>
@@ -220,17 +219,19 @@ if (navMain.classList.contains('main-nav--closed')) {
             </div>
             <p class="photo-container__text">Всем GM и взаимные лайки!</p>
             <div class="photo-container__likes-info">
-            <button class="photo-container__button button" type="button">
+            <button class="photo-container__button" type="button">
               <span class="visually-hidden">Отметить как понравившуюся.</span>
             </button>
             <span class="photo-container__likes">Нравится: 2560</span>
             </div>
           </div>
         </div>
-        <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
 
       <section class="photos-editor">
+        <div class="photos-editor__text-wrapper">
+          <p class="photos-editor__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
         <div class="photos-editor__wrapper container">
           <h2 class="visually-hidden">Редактор изображения.</h2>
           <div class="photos-editor__image-wrapper">
@@ -263,8 +264,8 @@ if (navMain.classList.contains('main-nav--closed')) {
 
           <input class="photos-editor__range-scale photos-editor__range-contrast" type="range" id="contrast" name="contrast" min="0" max="10">
 
-          <button class="photos-editor__button photos-editor__button--submit button" type="submit">Запостить</button>
-          <button class="photos-editor__button button photos-editor__button--reset" type="reset">Отмена</button>
+          <button class="photos-editor__button photos-editor__button--submit button button--shape-round button--theme-contrast" type="submit">Запостить</button>
+          <button class="photos-editor__button photos-editor__button--reset button  button--shape-round button--theme-dark" type="reset">Отмена</button>
 
           </form>
         </div>

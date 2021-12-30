@@ -20,7 +20,7 @@
 
 .photo-container__description {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-rows: min-content 1fr min-content;
   background-color: #f2f2f2;
   box-sizing: border-box;
   padding-left: 17px;
@@ -30,12 +30,15 @@
 
   @media (min-width: @tablet-width) {
     padding: 30px;
-    flex-grow: 1;
   }
 }
 
 .photo-container__image-link {
   text-decoration: none;
+}
+
+.photo-container__post-info {
+  margin-bottom: 14px;
 }
 
 .photo-container__author-name {
@@ -57,6 +60,7 @@
 .photo-container__likes-info {
   display: flex;
   align-items: center;
+  margin-top: auto;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -68,6 +72,8 @@
 .photo-container__image {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .photo-container__button {
@@ -79,8 +85,16 @@
   background-position: center;
   padding: 0;
   margin-right: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
 
   @media (min-width: @tablet-width) {
     margin-right: 0;
   }
+}
+
+.photo-container__text {
+  margin: 0;
+  margin-bottom: 25px;
 }

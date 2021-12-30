@@ -13,22 +13,28 @@
     width: inherit;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     flex-wrap: wrap;
   }
 }
 
 .site-list__item {
   text-align: center;
+  padding: 0;
 
   @media (max-width: (@desktop-width - 1px)) {
     background-color: @base-color-dark;
-    padding: 15.5px 20px;
     box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
 
   @media (min-width: @desktop-width) {
-    padding: 10px 10px;
+    margin-right: 52.6px;
+  }
+}
+
+.site-list__item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -45,11 +51,13 @@
   text-decoration: none;
   display: block;
   position: relative;
+  padding: 15.5px 20px;
 
   @media (min-width: @desktop-width) {
     font-weight: normal;
     line-height: 18px;
     text-transform: none;
+    padding: 10px 10px;
   }
 
   &:hover {
@@ -67,9 +75,9 @@
     content: " ";
     position: absolute;
     display: block;
-    left: 0;
-    right: 0;
-    top: 30px;
+    left: 10px;
+    right: 10px;
+    top: 40px;
     height: 2px;
     background-color: #ffffff;
   }
