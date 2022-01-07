@@ -1,31 +1,14 @@
 .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1;
 }
 
-.modal-container__title {
-  font-weight: bold;
-  font-size: 18px;
-  color: #000000;
-}
-
-.modal-container__button {
-  font-weight: bold;
-  line-height: 30px;
-  text-transform: uppercase;
-  background-color: #2aab6d;
-
-  &:hover {
-    background-color: #1c9b5e;
-  }
-
-  &:active {
-    color: fade(#ffffff, 30);
-    background-color: #1c9b5e;
-  }
-
-  &--disabled {
-    background-color: #e5e5e5;
-  }
+.modal-container--close {
+  display: none;
 }

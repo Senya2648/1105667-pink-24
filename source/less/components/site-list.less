@@ -2,7 +2,7 @@
   list-style-type: none;
   margin: 0;
   padding: 1px 0;
-  display: none; /*переключение на flex*/
+  display: flex;
   flex-direction: column;
 
   @media (max-width: (@desktop-width - 1px)) {
@@ -13,17 +13,28 @@
     width: inherit;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
+    flex-wrap: wrap;
   }
 }
 
 .site-list__item {
   text-align: center;
+  padding: 0;
 
   @media (max-width: (@desktop-width - 1px)) {
     background-color: @base-color-dark;
-    padding: 15.5px 0;
     box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 52.6px;
+  }
+}
+
+.site-list__item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
@@ -39,11 +50,14 @@
   color: #ffffff;
   text-decoration: none;
   display: block;
+  position: relative;
+  padding: 15.5px 20px;
 
   @media (min-width: @desktop-width) {
     font-weight: normal;
     line-height: 18px;
     text-transform: none;
+    padding: 10px 10px;
   }
 
   &:hover {
@@ -53,5 +67,18 @@
   &:active {
     color: @base-color-contrast;
     opacity: 0.3;
+  }
+}
+
+.site-list__link--current::before {
+  @media (min-width: @desktop-width) {
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 10px;
+    right: 10px;
+    top: 40px;
+    height: 2px;
+    background-color: #ffffff;
   }
 }
