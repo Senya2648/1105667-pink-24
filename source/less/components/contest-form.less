@@ -204,9 +204,45 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-    grid-auto-flow: column;
     column-gap: 22px;
     row-gap: 43px;
+  }
+}
+
+.contest-form__fieldset-achievements .contest-form__fieldset-item:nth-child(1) {
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
+}
+
+.contest-form__fieldset-achievements .contest-form__fieldset-item:nth-child(2) {
+  @media (min-width: @desktop-width) {
+    order: 4;
+  }
+}
+
+
+.contest-form__fieldset-achievements .contest-form__fieldset-item:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+
+.contest-form__fieldset-achievements .contest-form__fieldset-item:nth-child(4) {
+  @media (min-width: @desktop-width) {
+    order: 5;
+  }
+}
+
+.contest-form__fieldset-achievements .contest-form__fieldset-item:nth-child(5) {
+  @media (min-width: @desktop-width) {
+    order: 3;
+  }
+}
+
+.contest-form__fieldset-achievements .contest-form__fieldset-item:nth-child(6) {
+  @media (min-width: @desktop-width) {
+    order: 6;
   }
 }
 
@@ -344,6 +380,10 @@
   background-size: 22px 16px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/tick@2x.png");
+  }
 }
 
 .contest-form__fieldset-app .contest-form__fieldset-item {
@@ -477,6 +517,10 @@
     background-size: 20px 19px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-phone@2x.png");
+    }
   }
 }
 
@@ -486,5 +530,9 @@
     background-size: 18px 13px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-mail@2x.png");
+    }
   }
 }

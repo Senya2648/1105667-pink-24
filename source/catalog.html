@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -94,8 +98,12 @@ if (navMain.classList.contains('main-nav--closed')) {
       <article class="photo-hit">
         <h2 class="photo-hit__title">Панорама дня</h2>
 
-          <a class="photo-hit__image-link" target="_blank" href="img/photos-panorama-full.jpg">
-            <img class="photo-hit__image" src="img/photos-panorama.jpg" alt="Подвесной мост" width="320" height="137">
+          <a class="photo-hit__image-link" target="_blank" href="img/photos-panorama-desktop.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photos-panorama-desktop.jpg 1x, img/photos-panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photos-panorama-tablet.jpg 1x, img/photos-panorama-tablet@2x.jpg 2x">
+              <img class="photo-hit__image" src="img/photos-panorama-mobile.jpg" alt="Подвесной мост" srcset="img/photos-panorama-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="photo-hit__description">
             <div class="photo-hit__post-info">
@@ -119,8 +127,12 @@ if (navMain.classList.contains('main-nav--closed')) {
       <section class="photos container">
         <h2 class="visually-hidden">Фотографии.</h2>
         <div class="photos__single-photo photo-container">
-          <a class="photo-container__image-link" target="_blank" href="img/photos-car-full.jpg">
-            <img class="photo-container__image" src="img/photos-car.jpg" alt="Белая машина" width="280" height="180">
+          <a class="photo-container__image-link" target="_blank" href="img/photos-car-desktop.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photos-car-desktop.jpg 1x, img/photos-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photos-car-tablet.jpg 1x, img/photos-car-tablet@2x.jpg 2x">
+              <img class="photo-container__image" src="img/photos-car-mobile.jpg" alt="Белая машина" srcset="img/photos-car-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="photo-container__description">
             <div class="photo-container__post-info">
@@ -137,8 +149,12 @@ if (navMain.classList.contains('main-nav--closed')) {
           </div>
         </div>
         <div class="photos__single-photo photo-container">
-          <a class="photo-container__image-link" target="_blank" href="img/photos-drums-full.jpg">
-            <img class="photo-container__image" src="img/photos-drums.jpg" alt="Барабанная установка" width="280" height="180">
+          <a class="photo-container__image-link" target="_blank" href="img/photos-drums-desktop.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photos-drums-desktop.jpg 1x, img/photos-drums-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photos-drums-tablet.jpg 1x, img/photos-drums-tablet@2x.jpg 2x">
+              <img class="photo-container__image" src="img/photos-drums-mobile.jpg" alt="Барабанная установка" srcset="img/photos-drums-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="photo-container__description">
             <div class="photo-container__post-info">
@@ -155,8 +171,12 @@ if (navMain.classList.contains('main-nav--closed')) {
           </div>
         </div>
         <div class="photos__single-photo photo-container">
-          <a class="photo-container__image-link" target="_blank" href="img/photos-roof-full.jpg">
-            <img class="photo-container__image" src="img/photos-roof.jpg" alt="Стеклянная крыша" width="280" height="180">
+          <a class="photo-container__image-link" target="_blank" href="img/photos-roof-desktop.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photos-roof-desktop.jpg 1x, img/photos-roof-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photos-roof-tablet.jpg 1x, img/photos-roof-tablet@2x.jpg 2x">
+              <img class="photo-container__image" src="img/photos-roof-mobile.jpg" alt="Стеклянная крыша" srcset="img/photos-roof-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="photo-container__description">
             <div class="photo-container__post-info">
@@ -173,8 +193,12 @@ if (navMain.classList.contains('main-nav--closed')) {
           </div>
         </div>
         <div class="photos__single-photo photo-container">
-          <a class="photo-container__image-link" target="_blank" href="img/photos-kuban-full.jpg">
-            <img class="photo-container__image" src="img/photos-kuban.jpg" alt="Кубанская бахча" width="280" height="180">
+          <a class="photo-container__image-link" target="_blank" href="img/photos-kuban-desktop.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photos-kuban-desktop.jpg 1x, img/photos-kuban-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photos-kuban-tablet.jpg 1x, img/photos-kuban-tablet@2x.jpg 2x">
+              <img class="photo-container__image" src="img/photos-kuban-mobile.jpg" alt="Кубанская бахча" srcset="img/photos-kuban-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="photo-container__description">
             <div class="photo-container__post-info">
@@ -191,8 +215,12 @@ if (navMain.classList.contains('main-nav--closed')) {
           </div>
         </div>
         <div class="photos__single-photo photo-container">
-          <a class="photo-container__image-link" target="_blank" href="img/photos-legs-full.jpg">
-            <img class="photo-container__image" src="img/photos-legs.jpg" alt="Ноги свешиваются со скалы на фоне гор" width="280" height="180">
+          <a class="photo-container__image-link" target="_blank" href="img/photos-legs-desktop.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photos-legs-desktop.jpg 1x, img/photos-legs-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photos-legs-tablet.jpg 1x, img/photos-legs-tablet@2x.jpg 2x">
+              <img class="photo-container__image" src="img/photos-legs-mobile.jpg" alt="Ноги свешиваются со скалы на фоне гор" srcset="img/photos-legs-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="photo-container__description">
             <div class="photo-container__post-info">
@@ -209,8 +237,12 @@ if (navMain.classList.contains('main-nav--closed')) {
           </div>
         </div>
         <div class="photos__single-photo photo-container">
-          <a class="photo-container__image-link" target="_blank" href="img/photos-plain-full.jpg">
-            <img class="photo-container__image" src="img/photos-plain.jpg" alt="Крыло самолета на фоне неба" width="280" height="180">
+          <a class="photo-container__image-link" target="_blank" href="img/photos-plain-desktop.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photos-plain-desktop.jpg 1x, img/photos-plain-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photos-plain-tablet.jpg 1x, img/photos-plain-tablet@2x.jpg 2x">
+              <img class="photo-container__image" src="img/photos-plain-mobile.jpg" alt="Крыло самолета на фоне неба" srcset="img/photos-plain-mobile@2x.jpg 2x">
+            </picture>
           </a>
           <div class="photo-container__description">
             <div class="photo-container__post-info">
@@ -235,7 +267,11 @@ if (navMain.classList.contains('main-nav--closed')) {
         <div class="photos-editor__wrapper container">
           <h2 class="visually-hidden">Редактор изображения.</h2>
           <div class="photos-editor__image-wrapper">
-            <img class="photos-editor__image" src="img/photos-winter.jpg" alt="Новая фотография" width="280" height="374">
+
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photos-winter-tablet.jpg 1x, img/photos-winter-tablet@2x.jpg 2x">
+              <img class="photo-container__image" src="img/photos-winter-mobile.jpg" alt="Новая фотография" srcset="img/photos-winter-mobile@2x.jpg 2x">
+            </picture>
             <label class="visually-hidden" for="image-edit">Загрузите фотографию</label>
             <input class="photos-editor__image-input" type="file" name="image-edit" id="image-edit">
           </div>

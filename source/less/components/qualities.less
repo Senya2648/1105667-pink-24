@@ -40,10 +40,14 @@
   @media (min-width: @tablet-width) {
     text-align: left;
     padding-left: 330px;
-    background-image: url("../img/back-iphone-smiley.png");
+    background-image: url("../img/iphone-smiley-tablet.png");
     background-repeat: no-repeat;
     background-size: 268px auto;
     background-position: left bottom -64px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-smiley-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -97,10 +101,14 @@
   position: relative;
   padding-bottom: 325px;
   padding-top: 52px;
-  background-image: url("../img/back-iphone-smiley.png");
+  background-image: url("../img/iphone-smiley-mobile.png");
   background-repeat: no-repeat;
   background-size: 157px auto;
   background-position: center bottom -43px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphone-smiley-mobile@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -152,11 +160,15 @@
     width: 100%;
     height: 301px;
     top: -360px;
-    background-image: url("../img/iphone-grey.png");
+    background-image: url("../img/iphone-grey-desktop.png");
     background-repeat: no-repeat;
     background-size: 186px auto;
     background-position: center top;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-grey-desktop@2x.png");
+    }
   }
 }
 
@@ -168,11 +180,15 @@
     width: 100%;
     height: 301px;
     top: -360px;
-    background-image: url("../img/iphone-pink.png");
+    background-image: url("../img/iphone-pink-desktop.png");
     background-repeat: no-repeat;
     background-size: 186px auto;
     background-position: center top;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-pink-desktop@2x.png");
+    }
   }
 }
 
@@ -184,11 +200,15 @@
     width: 100%;
     height: 301px;
     top: -360px;
-    background-image: url("../img/iphone-smiley.png");
+    background-image: url("../img/iphone-smiley-desktop.png");
     background-repeat: no-repeat;
     background-size: 186px auto;
     background-position: center top;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-smiley-desktop@2x.png");
+    }
   }
 }
 

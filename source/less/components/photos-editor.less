@@ -91,18 +91,27 @@
     height: 25px;
     left: -51px;
     top: -11px;
-    background-image: url("../img/icon-crop.png");
+    background-image: url("../img/icon-crop-tablet.png");
     background-repeat: no-repeat;
     background-size: 22px 22px;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-crop-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 50px;
     height: 50px;
+    background-image: url("../img/icon-crop-desktop.png");
     background-size: 44px 44px;
     left: -92px;
     top: -22px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-crop-desktop@2x.png");
+    }
   }
 }
 
@@ -114,18 +123,27 @@
     height: 25px;
     left: -51px;
     top: -11px;
-    background-image: url("../img/icon-fill.png");
+    background-image: url("../img/icon-fill-tablet.png");
     background-repeat: no-repeat;
     background-size: 24px 22px;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-fill-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 50px;
     height: 50px;
+    background-image: url("../img/icon-fill-desktop.png");
     background-size: 48px 43px;
     left: -92px;
     top: -22px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-fill-desktop@2x.png");
+    }
   }
 }
 
@@ -137,18 +155,27 @@
     height: 25px;
     left: -51px;
     top: -11px;
-    background-image: url("../img/icon-contrast.png");
+    background-image: url("../img/icon-contrast-tablet.png");
     background-repeat: no-repeat;
     background-size: 16px 16px;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-contrast-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 50px;
     height: 50px;
+    background-image: url("../img/icon-contrast-desktop.png");
     background-size: 32px 32px;
     left: -92px;
     top: -22px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/icon-contrast-desktop@2x.png");
+    }
   }
 }
 

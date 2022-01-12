@@ -115,7 +115,6 @@
 .photo-hit__image {
   display: block;
   margin: 0 auto;
-  width: 100%;
   height: auto;
 }
 
@@ -131,6 +130,10 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/heart@2x.png");
+  }
 
   @media (min-width: @tablet-width) {
     margin-right: 0;
