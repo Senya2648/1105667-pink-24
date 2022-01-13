@@ -276,29 +276,31 @@ if (navMain.classList.contains('main-nav--closed')) {
             <input class="photos-editor__image-input" type="file" name="image-edit" id="image-edit">
           </div>
           <form  class="photos-editor__form" action="https://echo.htmlacademy.ru/" method="post">
-          <button class="photos-editor__button photos-editor__button-cut button" type="button">
+          <button class="photos-editor__button photos-editor__button--active photos-editor__button-cut button" type="button">
             <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z" fill="#D22856"/>
+              <path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16Zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12Z"/>
             </svg>
             <span class="visually-hidden">Обрезать фотографию.</span>
           </button>
-
-          <input class="photos-editor__range-scale photos-editor__range-cut" type="range" id="cut" name="cut" min="0" max="10">
+          <div class="photos-editor__range-wrapper">
+            <input class="photos-editor__range-scale photos-editor__range-cut" type="range" id="cut" name="cut" min="0" max="10" value="8">
+          </div>
 
           <button class="photos-editor__button photos-editor__button-fill button" type="button">
-            <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
+            <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="48" height="43" viewBox="0 0 48 43" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M33.12 17.88 15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24ZM10.41 20 20 10.42 29.59 20H10.41ZM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7ZM48 40H0v3h48v-3Z"/></g></svg>
             <span class="visually-hidden">Заливка фотографии.</span>
           </button>
-
-          <input class="photos-editor__range-scale photos-editor__range-fill" type="range" id="fill" name="fill" min="0" max="10">
-
+          <div class="photos-editor__range-wrapper">
+            <input class="photos-editor__range-scale photos-editor__range-fill" type="range" id="fill" name="fill" min="0" max="10" value="1">
+          </div>
 
           <button class="photos-editor__button photos-editor__button-contrast button" type="button">
-            <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity=".3" fill="#283645"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g></svg>
+            <svg class="photos-editor__button-icon" aria-hidden="true" focusable="false" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24Zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32Z"/><path d="M16 24.29a8.52 8.52 0 0 0 0-17"/></g></svg>
             <span class="visually-hidden">Изменить контраст фотографии.</span>
           </button>
-
-          <input class="photos-editor__range-scale photos-editor__range-contrast" type="range" id="contrast" name="contrast" min="0" max="10">
+          <div class="photos-editor__range-wrapper">
+            <input class="photos-editor__range-scale photos-editor__range-contrast" type="range" id="contrast" name="contrast" min="0" max="10">
+          </div>
 
           <button class="photos-editor__button photos-editor__button--submit button button--shape-round button--theme-contrast" type="submit">Запостить</button>
           <button class="photos-editor__button photos-editor__button--reset button  button--shape-round button--theme-dark" type="reset">Отмена</button>
