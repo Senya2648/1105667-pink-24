@@ -8,11 +8,39 @@
 }
 
 .page-main__title-wrapper {
-  background-image: url("../img/back-city.jpg");
-  background-size: cover;
+  background-image: url("../img/back-mobile.jpg");
+  // background-size: cover;
   background-repeat: no-repeat;
   background-color: #1d2631;
-  background-position: 50%;
+  background-position: center top;
+  padding-top: 102px;
+  padding-bottom: 51px;
+  margin-bottom: 54px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.png");
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+    padding-top: 191px;
+    padding-bottom: 74px;
+    margin-bottom: 100px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+    padding-top: 184px;
+    padding-bottom: 104px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+    }
+  }
 }
 
 .page-main__title {
@@ -23,21 +51,10 @@
 
   &--inner {
     color: #ffffff;
-    padding-top: 102px;
-    padding-bottom: 84px;
-    margin-bottom: 54px;
 
     @media (min-width: @tablet-width) {
       font-size: 50px;
       line-height: 68px;
-      padding-top: 191px;
-      padding-bottom: 143px;
-      margin-bottom: 100px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-top: 184px;
-      padding-bottom: 104px;
     }
   }
 }

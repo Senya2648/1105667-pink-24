@@ -30,6 +30,14 @@
   transform: translate(-50%, -50%);
 }
 
+.slider__toggle:hover::before {
+  opacity: 0.6;
+}
+
+.slider__toggle:active::before {
+  opacity: 0.1;
+}
+
 .slider__toggle--current::before {
   content: " ";
   position: absolute;
@@ -41,5 +49,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.slider__toggle--current:hover::before,
+.slider__toggle--current:active::before {
   opacity: 1;
 }
