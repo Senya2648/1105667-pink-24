@@ -11,13 +11,13 @@
 }
 
 .study__wrapper {
-  padding-top: 102px;
+  padding-top: 95px;
   padding-left: 330px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
   background-image: url("../img/back-timer-tablet.png");
   background-repeat: no-repeat;
   background-size: 238px auto;
-  background-position: left center;
+  background-position: left 20px top 55px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-timer-tablet@2x.png");
@@ -25,9 +25,11 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 500px;
+    padding-top: 125px;
+    padding-bottom: 113px;
     background-image: url("../img/back-timer-desktop.png");
     background-size: 298px auto;
-    background-position: 130px center;
+    background-position: left 130px top 30px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-timer-desktop@2x.png");
@@ -41,22 +43,23 @@
   line-height: 36px;
   color: #000000;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
-    margin-bottom: 37px;
+    margin-bottom: 25px;
   }
 }
 
 .study__text {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+  padding-right: 5px;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
   }
 }
 
@@ -67,5 +70,25 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+}
+
+.study__title-break {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.study__text-break--tablet {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.study__text-break--desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline;
   }
 }
