@@ -110,12 +110,8 @@ const copy = (done) => {
 }
 
 const copyFavicons = (done) => {
-  return gulp.src('source/img/favicons/*.{png,svg}',
-  {
-    base: 'source'
-  })
-  .pipe(gulp.dest('build/img/favicons'))
-  done();
+  return gulp.src('source/img/favicons/*.{png,svg}')
+  .pipe(gulp.dest('build/img/favicons'));
 }
 
 // Clean
